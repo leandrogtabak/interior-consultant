@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Interior Consultant</title>
+  </head>
+  <body>
+    <div class="mobile-navigation" id="mobile-navigation">
+      <button class="mobile-navigation--close-button" onclick="toggleMobileNavigation()"><span class="material-symbols-outlined" style="color: white"> close </span></button>
+      <div class="mobile-navigation--menu-container">
+        <ul class="mobile-navigation--menu">
+          <li class="mobile-navigation--item"><a href="#home">Home</a></li>
+          <li class="mobile-navigation--item"><a href="#collection">Collection</a></li>
+          <li class="mobile-navigation--item"><a href="#about">About</a></li>
+          <li class="mobile-navigation--item"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="container">
+      <nav class="navigation">
+        <button type="button" class="navigation--th-int-btn">THIS INTERIOR</button>
+
+        <ul class="navigation--menu">
+          <li class="navigation--item"><a href="#home">Home</a></li>
+          <li class="navigation--item"><a href="#collection">Collection</a></li>
+          <li class="navigation--item"><a href="#about">About</a></li>
+          <li class="navigation--item"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="navigation--menu-button" onclick="toggleMobileNavigation()">
+          <button>
+            <span class="material-symbols-outlined" style="color: white"> menu </span>
+          </button>
+        </div>
+      </nav>
+      <main>
+        <div class="description">
+          <h1 class="description--title">Modern interior</h1>
+          <p class="description--text">A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+          <div class="description--read-more">
+            <p>Read more</p>
+            <div class="read-more--arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xml:space="preserve"
+                width="20.5mm"
+                height="7.5mm"
+                version="1.1"
+                style="shape-rendering: geometricPrecision; text-rendering: geometricPrecision; image-rendering: optimizeQuality; fill-rule: evenodd; clip-rule: evenodd; fill: rgb(255, 255, 255)"
+                viewbox="0 0 2050 750"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path class="fil0 str0" d="M2009 336l-295 -295c-35,-34 -94,-10 -94,39l0 190 -1488 0c-59,0 -107,47 -107,105 0,58 48,105 107,105l1488 0 0 190c0,49 59,73 94,39l295 -295c21,-22 21,-56 0,-78z;" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="image-description">
+          <img src="photo1.png" alt="" />
+
+          <div class="image-description--card-avatar">
+            <div class="card-avatar--header">
+              <img src="photo2.png" alt="" />
+              <div class="card-avatar--header--info">
+                <p>Aliza Webber</p>
+                <p>Interior designer</p>
+              </div>
+            </div>
+            <p class="card-avatar--description">Designed in 2020 by Aliza Webber</p>
+          </div>
+        </div>
+      </main>
+      <footer>created by <a href="">leandrogtabak</a> - devChallenges.io</footer>
+    </div>
+    <script>
+      function toggleMobileNavigation() {
+        let element = document.querySelector('#mobile-navigation');
+        if (element.classList.contains('mobile-navigation__open')) {
+          element.classList.remove('mobile-navigation__open');
+        } else {
+          element.classList.add('mobile-navigation__open');
+        }
+      }
+    </script>
+  </body>
+</html>
